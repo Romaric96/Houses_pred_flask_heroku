@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>HOUSE PRICE PREDICTION</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+      <!-- Responsive-->
+      <link rel="stylesheet"  href="{{url_for('static', filename='css/responsive.css')}}">
+      <link rel="stylesheet"  href="{{url_for('static', filename='css/owl.carousel.min.css') }}">
+      <!-- fevicon -->
+      <link rel="icon"  href="{{url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}" >
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">  
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header_bg">
+            <div class="header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="http://housespred.herokuapp.com/"><img src="{{ url_for('static',filename='images/logo.png')}}" alt="#" /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <ul class="costomer">
+                           <li><h2><a href="https://institutsaintjean.org/">Universite Saint Jean <br>Saint Jean Ingenieur</a></h2></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="col-md-5">
+                        <div class="text-bg">
+                           <span>HOUSE PRICE<br>PREDICTION</span>
+                           <a href="#header2">Click here to predict price of house</a>
+                           <p style="text-align: justify;">The process of buying a home is often described as one of the most significant decisions that a person can make in their lifetime. It is a complex and emotional experience that can involve a range of factors, from practical considerations such as location, size, and layout to more subjective elements like personal taste, lifestyle, and community.
+                              Ask a buyer to describe their dream home and they probably won't start with basement ceiling height or proximity to an east-west railroad track.</p>
+                           <p style="text-align: justify;">In the following section we will develop a prediction app to help you determine the value of a house.</p>                          
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <!-- end banner -->
+    <!-- weare -->
+    <div id="why" class="weare">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2> <span class="white">DATASET PRESENTATION</span></h2> <br><br>                
+                  <p style="text-align: justify;">The Ames, Iowa real estate market is known for its unique character and diverse mix of residential properties. With a wide range of housing options available, from historic homes to modern townhouses, buyers and sellers alike must navigate a complex and competitive market in order to achieve their goals.<br><br>
+                     To help shed light on this complex market, a data set has been created that includes 79 explanatory variables describing (almost) every aspect of residential homes in the area. This data set forms the basis of a competition that challenges participants to use their data science and predictive modeling skills to accurately predict the final price of each home.<br><br>
+                     By analyzing this vast array of data points, participants in the competition can gain insights into the many factors that influence real estate prices in Ames, Iowa. From the size and layout of the home to its location within the city, there are countless variables that can impact the final sale price of a property. By carefully examining these factors and developing accurate predictive models, participants can gain a deeper understanding of the complex and ever-changing real estate market in Ames, Iowa.<br><br>
+                     The insights gained from this competition can be used by a wide range of professionals, including real estate agents, appraisers, and investors. By leveraging the power of data science and machine learning, these professionals can gain a competitive edge in a crowded and competitive market. They can use the insights gained from the competition to make more informed decisions about buying and selling properties, and to develop more accurate appraisals that reflect the true value of a property.<br><br>
+                     Overall, the Ames, Iowa real estate market presents a fascinating challenge for data scientists and real estate professionals alike. By harnessing the power of data and predictive modeling, participants in the competition can gain valuable insights into this complex and dynamic market, helping them to make more informed decisions and achieve their goals with greater success.<br><br><br><br><br><br>
+                  </p>
+                  <h2> <span class="white" id="header2">HOUSE PRICE PREDICTION HERE</span></h2> <br><br>
+      <div class="container-fluid">
+      <!-- bandeau -->
+      <!-- Bootstrap Jumbotron -->
+      <div>
+        <img src="{{ url_for('static', filename='images/banner2.png') }}"/>
+      </div><br>
+      <!-- ligne à deux colonnes -->
+      <div class="row container">
+        <div class="col-md-9 container">
+          <!-- formulaire HTML - on poste ses valeurs avec l'action [/] -->
+          <form method="post" action="/">
+            <!-- titre -->
+            <div class="alert alert-primary" role="alert">
+              <b>PLEASE ENTER THE PARAMETERS FOR THE HOUSE PRICE PREDICTION</b>
+            </div>
+
+            <!-- formulaire Bootstrap -->
+            <fieldset class="form-group">
+              <!-- 1ère ligne -->
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="OverallQual" class="col-md-3 col-form-label">Overall material quality</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="OverallQual" name="OverallQual" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="GrLivArea" class="col-md-3 col-form-label">Above grade ground area</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="GrLivArea" name="GrLivArea" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="GarageCars" class="col-md-3 col-form-label">Size of garage cars</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="GarageCars" name="GarageCars" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="GarageArea" class="col-md-3 col-form-label">Size of garage area</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="GarageArea" name="GarageArea" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="TotalBsmtSF" class="col-md-3 col-form-label">Total square feet basement</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="TotalBsmtSF" name="TotalBsmtSF" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="FstFlrSF" class="col-md-3 col-form-label">First Floor</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="FstFlrSF" name="FstFlrSF" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="FullBath" class="col-md-3 col-form-label">Full bathrooms</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="FullBath" name="FullBath" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="TotRmsAbvGrd" class="col-md-3 col-form-label">Full rooms</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="TotRmsAbvGrd" name="TotRmsAbvGrd" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="YearBuilt" class="col-md-3 col-form-label">Original construction date</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="YearBuilt" name="YearBuilt" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="YearRemodAdd" class="col-md-3 col-form-label">Remodel date</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="YearRemodAdd" name="YearRemodAdd" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="MasVnrArea" class="col-md-3 col-form-label">Masonry veneer area</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="MasVnrArea" name="MasVnrArea" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="GarageYrBlt" class="col-md-3 col-form-label">Year garage was built</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="GarageYrBlt" name="GarageYrBlt" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="Fireplaces" class="col-md-3 col-form-label">Number of fireplaces</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="Fireplaces" name="Fireplaces" required/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!-- libellé -->
+                <label for="BsmtFinSF1" class="col-md-3 col-form-label">Type 1 finished</label>
+                <div class="col-md-4">
+                  <!-- zone de saisie texte -->
+                  <input type="text" class="form-control" id="BsmtFinSF1" name="BsmtFinSF1" required/>
+                </div>
+              </div>
+
+              <!-- bouton de type [submit] sur une 3ième ligne -->
+              <div class="form-group row">
+                <div class="col-md-2">
+                  <button type="submit" class="btn btn-primary">PREDICT</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <ul class="list-group list-group-flush ">
+            <li class="list-group-item active "> <b> PRICE : {{ note }}</b></li>
+            <li class="list-group-item">Overall material: <b> {{ results[0] }} </b></li>
+            <li class="list-group-item">Above grade: <br><b> {{ results[1] }} </b></li>
+            <li class="list-group-item">Size of garage: <b> {{ results[2] }} </b></li>
+            <li class="list-group-item">Size of garage: <b> {{ results[3] }} </b></li>
+            <li class="list-group-item">Total square feet basement: <br><b> {{ results[4] }} </b></li>
+            <li class="list-group-item">First Floor: <br><b> {{ results[5] }} </b></li>
+            <li class="list-group-item">Full bathrooms: <br><b> {{ results[6] }} </b></li>
+            <li class="list-group-item">Total rooms: <br><b> {{ results[7] }} </b></li>
+            <li class="list-group-item">Original construction date: <br><b> {{ results[8] }} </b></li>
+            <li class="list-group-item">Remodel date: <br><b> {{ results[9] }} </b></li>
+            <li class="list-group-item">Masonry veneer area: <br><b> {{ results[10] }} </b></li>
+            <li class="list-group-item">Year garage was built: <br><b> {{ results[11] }} </b></li>
+            <li class="list-group-item">Number of fireplaces: <br><b> {{ results[12] }} </b></li>
+            <li class="list-group-item">Type 1 finished: <br><b> {{ results[13] }} </b></li>
+        </ul>
+      </div>
+    </div><br><br><br>
+
+      <!-- three_box  -->
+      <div id="service" class="three_box">
+         <div class="container">
+            <div class="titlepage">
+               <h2> <span class="white">HOW TO PREDICT THE PRICE OF A HOUSE</span></h2>
+            </div>
+            
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img  src="{{ url_for('static',filename='images/service1.png')}}" alt="#" /></i>
+                     <h3>Location</h3>
+                     <p>The location of a property is a major factor in determining its value. 
+                        Factors such as proximity to amenities, school district, crime rate, and access to 
+                        public transportation can all affect the price of a home.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img  src="{{ url_for('static',filename='images/service2.png')}}" alt="#" /></i>
+                     <h3>Property size and condition</h3>
+                     <p>The size and condition of a property are also important factors to consider. Larger homes generally have higher prices, but the overall condition of a property is also a critical factor. Homes that have been well-maintained and updated are likely to have higher values than those that are outdated or in disrepair.
+                     </p>
+                  </div>
+               </div>
+               
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img  src="{{ url_for('static',filename='images/service3.png')}}" alt="#" /></i>
+                     <h3>Market trends</h3>
+                     <p>Real estate markets are subject to fluctuations, and it's important to consider overall market trends when making a prediction. Factors such as interest rates, supply and demand, and economic conditions can all impact the price of homes in a particular area.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end three_box -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p><b>© 2023 All Rights Reserved to <a href="https://www.linkedin.com/in/aude-mich%C3%A8le-djeunang-kenfack-496a72219/">DJEUNANG</a> and <a href="https://www.linkedin.com/in/romaric-ngomseu-910804195/">NGOMSEU</a></b></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+   </div> 
+</div>  
+   </body>
+</html>
+

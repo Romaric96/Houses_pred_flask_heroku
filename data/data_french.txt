@@ -1,0 +1,85 @@
+Champs de données
+Voici une brève version de ce que vous trouverez dans le fichier de description des données.
+
+SalePrice - le prix de vente de la propriété en dollars. Il s'agit de la variable cible que vous essayez de prédire.
+MSSubClass : La classe du bâtiment
+MSZoning : La classification générale de zonage
+LotFrontage : Pieds linéaires de la rue reliée à la propriété
+LotArea : Taille du lot en pieds carrés
+Rue : Type d'accès routier
+Ruelle : Type d'accès à la ruelle
+Forme du lot : Forme générale de la propriété
+LandContour : Planéité de la propriété
+Utilities (services publics) : Type de services publics disponibles
+LotConfig : Configuration du terrain
+LandSlope : Pente de la propriété
+Neighborhood (Quartier) : Emplacements physiques dans les limites de la ville d'Ames
+Condition1 : Proximité d'une route principale ou d'une voie ferrée
+Condition2 : Proximité de la route principale ou de la voie ferrée (si une deuxième est présente)
+BldgType : Type d'habitation
+HouseStyle : Style de l'habitation
+OverallQual : Qualité globale des matériaux et des finitions
+OverallCond : Cote de l'état général
+Année de construction : Date de construction initiale
+YearRemodAdd : Date de remodelage
+RoofStyle : Type de toit
+RoofMatl : Matériau de la toiture
+Extérieur1er : Revêtement extérieur de la maison
+Exterior2nd : Revêtement extérieur de la maison (si plus d'un matériau)
+MasVnrType : Type de placage de maçonnerie
+MasVnrArea : Surface du placage de maçonnerie en pieds carrés.
+ExterQual : Qualité des matériaux extérieurs
+ExterCond : État actuel du matériau à l'extérieur
+Fondation : Type de fondation
+BsmtQual : Hauteur du sous-sol
+BsmtCond : État général du sous-sol
+BsmtExposure : Murs du sous-sol de type "walkout" ou "rez-de-jardin".
+BsmtFinType1 : Qualité de la surface finie du sous-sol
+BsmtFinSF1 : Pieds carrés finis de type 1
+BsmtFinType2 : Qualité de la deuxième surface finie (si présente)
+BsmtFinSF2 : Pieds carrés finis de type 2
+BsmtUnfSF : Pieds carrés non finis du sous-sol.
+TotalBsmtSF : Superficie totale du sous-sol en pieds carrés.
+Chauffage : Type de chauffage
+HeatingQC : Qualité et état du chauffage
+CentralAir : Climatisation centrale
+Electrical : Système électrique
+1stFlrSF : Pieds carrés du premier étage
+2ndFlrSF : Pieds carrés du deuxième étage
+LowQualFinSF : Pieds carrés finis de basse qualité (tous les étages)
+GrLivArea : Surface habitable au-dessus du niveau du sol (pieds carrés)
+BsmtFullBath : Salles de bains complètes au sous-sol
+BsmtHalfBath : Demi-salle de bain au sous-sol
+FullBath : Salles de bains complètes au dessus du niveau du sol
+Demi-bain : Demi-salle de bain au dessus du niveau du sol
+Chambre à coucher : Nombre de chambres à coucher au-dessus du niveau du sous-sol
+Cuisine : Nombre de cuisines
+CuisineQual : Qualité de la cuisine
+TotRmsAbvGrd : Nombre total de pièces au-dessus du niveau du sol (ne comprend pas les salles de bain)
+Functional : Cote de fonctionnalité de la maison
+Foyers : Nombre de cheminées
+FireplaceQu : Qualité de la cheminée
+GarageType : Emplacement du garage
+GarageYrBlt : Année de construction du garage
+GarageFinish : Finition intérieure du garage
+GarageCars : Taille du garage en nombre de voitures
+GarageArea : Taille du garage en pieds carrés
+GarageQual : Qualité du garage
+GarageCond : Condition du garage
+PavedDrive : PavedDrive : Allée pavée
+WoodDeckSF : Surface de la terrasse en bois en pieds carrés
+OpenPorchSF : Surface du porche ouvert en pieds carrés.
+EnclosedPorch : Surface du porche fermé en pieds carrés
+3SsnPorch : Surface du porche trois saisons en pieds carrés
+ScreenPorch : Surface de la véranda en pieds carrés
+PoolArea : Surface de la piscine en pieds carrés
+PoolQC : Qualité de la piscine
+Fence : Qualité de la clôture
+MiscFeature : Caractéristique diverse non couverte par d'autres catégories
+MiscVal : $Valeur de la caractéristique diverse
+MoSold : Mois de vente
+YrSold : Année de vente
+SaleType : Type de vente
+SaleCondition : Condition de la vente
+
+Traduit avec www.DeepL.com/Translator (version gratuite)

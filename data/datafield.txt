@@ -1,12 +1,6 @@
-# Houses - Price prediction
+Data fields
+Here's a brief version of what you'll find in the data description file.
 
-This repository conatains a Python Streamlit application for predicting house prices, as well as Jupyter Notebooks for Exploratory and Models implementation.
-
-## Deployed App
-Click here to get to the deployed [Houses app](https://http://housespred.herokuapp.com/)
-
-
-## Current Data Description
 SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.
 MSSubClass: The building class
 MSZoning: The general zoning classification
@@ -87,12 +81,3 @@ MoSold: Month Sold
 YrSold: Year Sold
 SaleType: Type of sale
 SaleCondition: Condition of sale
-
-## Repository Structure
-| Folder/Code | Content |
-| ------------- | ------------- |
-| data | Contains the train, test, and sample data in CSV format |
-| Houses.py | Contains the actual Streamlit application |
-| Notebook | Jupyter Notebooks used for exploration and models |
-| model | The exported model for the prediction |
-| requirements.txt | Contains all requirements (necessary for Streamlit sharing) |
