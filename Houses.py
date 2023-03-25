@@ -8,8 +8,8 @@ from sklearn.model_selection import train_test_split
 
 app=Flask(__name__)
 
-train = pd.read_csv("./data/train.csv")
-test = pd.read_csv("./data/test.csv")
+train = pd.read_csv("train.csv")
+test = pd.read_csv("test.csv")
 
 @app.route("/", methods=['POST','GET'])
 def index():
@@ -35,7 +35,7 @@ def index():
         y_train= y_train.values.reshape(-1,1)
         y_test= y_test.values.reshape(-1,1)
 
-        model = joblib.load('./model/gradientboosting.pkl')
+        model = joblib.load('gradientboosting.pkl')
         data = [[OverallQual,GrLivArea,GarageCars,GarageArea,TotalBsmtSF,FstFlrSF,FullBath,TotRmsAbvGrd,YearBuilt,YearRemodAdd,MasVnrArea,GarageYrBlt,Fireplaces,BsmtFinSF1]]
         results = [OverallQual,GrLivArea,GarageCars,GarageArea,TotalBsmtSF,FstFlrSF,FullBath,TotRmsAbvGrd,YearBuilt,YearRemodAdd,MasVnrArea,GarageYrBlt,Fireplaces,BsmtFinSF1]
 
